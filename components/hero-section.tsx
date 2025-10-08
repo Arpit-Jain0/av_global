@@ -17,20 +17,26 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/modern-recycling-facility-with-green-technology-an.jpg"
+          src="/mainbg.jpg"
           alt="AV Global FZC Recycling Facility"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/60 to-primary/40"></div>
-      </div>
+          <div
+      className="absolute inset-0 z-10"
+      style={{
+        background: "linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0))",
+      }}
+    />
+  </div>
+      
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className={`transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 text-balance leading-tight">
-            Welcome to <span className="text-white">AV GLOBAL FZC</span>
+            Welcome to <span className="text-white">ATLAS GREEN TRADE</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 max-w-4xl mx-auto text-pretty px-4 sm:px-0">
+          <p className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 max-w-4xl mx-auto text-pretty px-4 sm:px-0">
             Serving with the power of recycling products. Your versatile and proactive partner for a circular economy
             initiative.
           </p>

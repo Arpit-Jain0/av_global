@@ -1,9 +1,12 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import { useSearchParams } from "next/navigation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Package, Factory, Recycle, Leaf, Droplets, Zap } from "lucide-react"
+import Link from "next/link"
 
 const productCategories = [
   {
@@ -180,6 +183,44 @@ export function ProductCategories() {
   const [isVisible, setIsVisible] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState(0)
   const sectionRef = useRef<HTMLDivElement>(null)
+  const searchParams = useSearchParams()
+
+  useEffect(() => {
+    const cat = searchParams?.get("category")
+    if (!cat) return
+
+    const key = cat.toLowerCase().trim()
+
+    const map: Record<string, number> = {
+      plastics: 0,
+      "plastics & polymers": 0,
+      "plastics & pet": 0,
+      pet: 0,
+      metals: 1,
+      "metals & alloys": 1,
+      metal: 1,
+      paper: 2,
+      "paper & pulp": 2,
+      "paper & cardboard": 2,
+      rubber: 3,
+      "rubber recycling": 3,
+      "rubber materials": 3,
+      chemicals: 4,
+      "chemicals & fertilizers": 4,
+      "oleo chemicals": 4,
+      oleo: 4,
+      fertilizers: 5,
+      "organic fertilizers": 5,
+    }
+
+    const idx = map[key]
+    if (typeof idx === "number") {
+      setSelectedCategory(idx)
+      if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+      }
+    }
+  }, [searchParams])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -199,7 +240,7 @@ export function ProductCategories() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 bg-muted/30">
+    <section id="categories" ref={sectionRef} className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
@@ -269,7 +310,12 @@ export function ProductCategories() {
                       </Badge>
                     ))}
                   </div>
-                  
+                  <Link href={`/contact?product=${product.name}`}>
+                    <Button variant="outline" size="sm" className="w-full group bg-transparent">
+                      Request Quote
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}

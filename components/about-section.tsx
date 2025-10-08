@@ -32,10 +32,10 @@ export function AboutSection() {
           className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
         >
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6 text-balance">
-            About AV Global FZC
+            About ATLAS GREEN TRADE
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto text-pretty">
-            AV Global FZC is a versatile and proactive partner, approachable and straightforward to collaborate with for
+            ATLAS GREEN TRADE is a versatile and proactive partner, approachable and straightforward to collaborate with for
             a circular economy initiative. We operate as a worldwide sourcing, distribution, and sales partner in the
             trade of recyclable, prime, and non-prime raw materials.
           </p>
@@ -47,7 +47,7 @@ export function AboutSection() {
           >
             <img
               src="/modern-sustainable-recycling-facility-with-workers.jpg"
-              alt="AV Global FZC Operations"
+              alt="ATLAS GREEN TRADE Operations"
               className="rounded-lg shadow-2xl w-full h-auto max-h-96 sm:max-h-none object-cover"
             />
           </div>
@@ -109,9 +109,9 @@ export function AboutSection() {
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground">Our Vision</h3>
               </div>
               <p className="text-muted-foreground text-pretty text-sm sm:text-base">
-                The vision of our company is to be clear in our goal about being differentiated from our counterparts as
-                a sustainable product-market fit company. We want to be known for our technical competitiveness in the
-                market.
+              We deliver technically compliant, high-quality, and specialized scrap and chemical products to both niche and mainstream markets, 
+              prioritizing quality, traceability, and long-term value over transactional volume. Our commitment lies in fostering lasting relationships through transparent operations, ethical sourcing, 
+              and precision-driven logistics—ensuring every shipment upholds our core values of trust, accountability, and excellence.
               </p>
             </CardContent>
           </Card>
@@ -127,9 +127,8 @@ export function AboutSection() {
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground">Our Mission</h3>
               </div>
               <p className="text-muted-foreground text-pretty text-sm sm:text-base">
-                Our Mission relies on 4Ts namely Tonnage, Technical knowhow, Technology and Team. The goal of all have
-                been underlined in phases in a time bound manner to achieve excellence in sustainable raw materials
-                trading.
+              To deliver technically compliant, high-quality & Specialize scrap and chemical products to both niche and conventional markets, emphasizing quality, traceability, and long-term value over transactional volume. We are committed to building enduring relationships through transparent operations, ethical sourcing, 
+              and precision-driven logistics—ensuring every shipment reflects our core values of trust, accountability, and excellence.
               </p>
             </CardContent>
           </Card>

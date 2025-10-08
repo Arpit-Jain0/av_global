@@ -13,7 +13,7 @@ export function Footer() {
                 <span className="text-primary-foreground font-bold text-xl">AV</span>
               </div>
               <div>
-                <div className="font-bold text-2xl">AV GLOBAL FZC</div>
+                <div className="font-bold text-2xl">ATLAS GREEN TRADE</div>
                 <div className="text-sm text-background/70">Recycling Excellence</div>
               </div>
             </div>
@@ -24,21 +24,21 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span className="text-background/80">C1-1207, Ajman Free Zone, PO Box 7722, Ajman (U.A.E.)</span>
+                <span className="text-background/80">BLANCEFLOERLAAN 73 ANTWERP 2050, BELGIUM</span>
               </div>
               <a
-                href="tel:+971504563645"
+                href="tel:+32491105135"
                 className="flex items-center gap-3 text-background/80 hover:text-primary transition-colors"
               >
                 <Phone className="h-5 w-5 text-primary" />
-                <span>+971-504563645</span>
+                <span>+32-491105135</span>
               </a>
               <a
-                href="mailto:info@avglobalfzc.com"
+                href="mailto:atlasgreentrade@gmail.com"
                 className="flex items-center gap-3 text-background/80 hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5 text-primary" />
-                <span>info@avglobalfzc.com</span>
+                <span>atlasgreentrade@gmail.com</span>
               </a>
              
             </div>

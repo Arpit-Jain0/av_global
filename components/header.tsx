@@ -24,11 +24,11 @@ export function Header() {
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <span>+971-504563645</span>
+              <span>+32-491105135</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
-              <span>info@avglobalfzc.com</span>
+              <span>atlasgreentrade@gmail.com</span>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -48,11 +48,11 @@ export function Header() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">AV</span>
-              </div>
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+  <img src="/logo.png" alt="Avatar" className="w-full h-full object-cover" />
+</div>
               <div>
-                <div className="font-bold text-xl text-foreground">AV GLOBAL FZC</div>
+                <div className="font-bold text-xl text-foreground">ATLAS GREEN TRADE BV</div>
                 <div className="text-xs text-muted-foreground">Recycling Excellence</div>
               </div>
             </Link>
