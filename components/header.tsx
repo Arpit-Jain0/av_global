@@ -9,9 +9,7 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
+    const handleScroll = () => setIsScrolled(window.scrollY > 40)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -19,8 +17,12 @@ export function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground py-2 px-0">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
+      <div
+        className={`fixed top-0 left-0 w-full z-50 bg-green-700 text-white py-2 px-0 transition-all duration-500 ${
+          isScrolled ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 px-4">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
@@ -40,64 +42,122 @@ export function Header() {
 
       {/* Main Header */}
       <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-background"
+        className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${
+          isScrolled ? "bg-white shadow-md" : "bg-transparent"
         }`}
+        style={{ marginTop: isScrolled ? "0" : "32px" }}
       >
-        <div className="max-w-7xl mx-auto px-0">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
-  <img src="/logo.png" alt="Avatar" className="w-full h-full object-cover" />
-</div>
-              <div>
-                <div className="font-bold text-xl text-foreground">ATLAS GREEN TRADE BV</div>
-                <div className="text-xs text-muted-foreground">Recycling Excellence</div>
-              </div>
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="w-auto h-10 overflow-hidden rounded-lg">
+              <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
+            </div>
+            {/* <div>
+              <h1
+                className={`text-lg font-bold transition-colors ${
+                  isScrolled ? "text-gray-900" : "text-white"
+                }`}
+              >
+                ATLAS GREEN TRADE
+              </h1>
+              <p
+                className={`text-xs transition-colors ${
+                  isScrolled ? "text-gray-600" : "text-gray-300"
+                }`}
+              >
+                Recycling Excellence
+              </p>
+            </div> */}
+          </Link>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex space-x-8">
+            <Link
+              href="/"
+              className={`transition-colors ${
+                isScrolled ? "text-gray-800 hover:text-green-700" : "text-white hover:text-green-300"
+              }`}
+            >
+              Home
             </Link>
+            <Link
+              href="/about"
+              className={`transition-colors ${
+                isScrolled ? "text-gray-800 hover:text-green-700" : "text-white hover:text-green-300"
+              }`}
+            >
+              About
+            </Link>
+            <Link
+              href="/products"
+              className={`transition-colors ${
+                isScrolled ? "text-gray-800 hover:text-green-700" : "text-white hover:text-green-300"
+              }`}
+            >
+              Products
+            </Link>
+            <Link
+              href="/contact"
+              className={`transition-colors ${
+                isScrolled ? "text-gray-800 hover:text-green-700" : "text-white hover:text-green-300"
+              }`}
+            >
+              Contact
+            </Link>
+          </nav>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-foreground hover:text-primary transition-colors">
-                Home
-              </Link>
-              <Link href="/about" className="text-foreground hover:text-primary transition-colors">
-                About Us
-              </Link>
-              <Link href="/products" className="text-foreground hover:text-primary transition-colors">
-                Products
-              </Link>
-              <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
-                Contact
-              </Link>
-              
-            </nav>
-
-            {/* Mobile Menu Button */}
-            <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+          {/* Mobile Menu Button */}
+          <button
+            className={`md:hidden p-2 transition-colors ${
+              isScrolled ? "text-gray-800" : "text-white"
+            }`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X /> : <Menu />}
+          </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-background border-t border-border">
-            <div className="px-4 sm:px-6 lg:px-8 py-4 space-y-4">
-              <Link href="/" className="block text-foreground hover:text-primary transition-colors">
+          <div
+            className={`md:hidden w-full transition-all ${
+              isScrolled ? "bg-white border-t border-gray-200" : "bg-black/70"
+            }`}
+          >
+            <div className="px-4 py-4 space-y-4">
+              <Link
+                href="/"
+                className={`block transition-colors ${
+                  isScrolled ? "text-gray-800" : "text-white"
+                } hover:text-green-500`}
+              >
                 Home
               </Link>
-              <Link href="/about" className="block text-foreground hover:text-primary transition-colors">
-                About Us
+              <Link
+                href="/about"
+                className={`block transition-colors ${
+                  isScrolled ? "text-gray-800" : "text-white"
+                } hover:text-green-500`}
+              >
+                About
               </Link>
-              <Link href="/products" className="block text-foreground hover:text-primary transition-colors">
+              <Link
+                href="/products"
+                className={`block transition-colors ${
+                  isScrolled ? "text-gray-800" : "text-white"
+                } hover:text-green-500`}
+              >
                 Products
               </Link>
-              <Link href="/contact" className="block text-foreground hover:text-primary transition-colors">
+              <Link
+                href="/contact"
+                className={`block transition-colors ${
+                  isScrolled ? "text-gray-800" : "text-white"
+                } hover:text-green-500`}
+              >
                 Contact
               </Link>
-
             </div>
           </div>
         )}

@@ -13,19 +13,17 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/mainbg.jpg"
-          alt="AV Global FZC Recycling Facility"
-          className="w-full h-full object-cover"
-        />
-          <div
-      className="absolute inset-0 z-10"
-      style={{
-        background: "linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0))",
-      }}
+    <img
+      src="/mainhome.jpg"
+      alt="ATLAS GREEN TRADE Facility"
+      className="w-full h-full object-center object-cover brightness-75"
+    />
+    <div
+      className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent z-10"
     />
   </div>
       
