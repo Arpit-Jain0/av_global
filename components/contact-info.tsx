@@ -6,19 +6,19 @@ const contactDetails = [
   {
     icon: MapPin,
     title: "Head Office Address",
-    content: "C1-1207, Ajman Free Zone, PO Box 7722, Ajman (U.A.E.)",
+    content: "De Keyserlei 60C box 1301, 2018 Antwer",
     color: "text-red-500",
   },
   {
     icon: Phone,
     title: "Phone Number",
-    content: "+971-504563645",
+    content: "+32-491105135",
     color: "text-green-500",
   },
   {
     icon: Mail,
     title: "Email Address",
-    content: "info@avglobalfzc.com",
+    content: "atlasgreentrade@gmail.com",
     color: "text-blue-500",
   },
   
@@ -80,7 +80,7 @@ export function ContactInfo() {
           </Card>
 
           {/* Registration Info */}
-          <Card className="hover-lift">
+          {/* <Card className="hover-lift">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6">Company Registration</h3>
               <div className="space-y-4">
@@ -98,7 +98,7 @@ export function ContactInfo() {
                 </div>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
 
           {/* Download Documents */}
           {/* <Card className="hover-lift">

@@ -30,8 +30,8 @@ export function ContactMap() {
                   
                  
                   <iframe
-                  title="AV Global FZC Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.5!2d55.5!3d25.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDI0JzAwLjAiTiA1NcKwMzAnMDAuMCJF!5e0!3m2!1sen!2sae!4v1234567890"
+                  title="ATLAS GREENTRADE LOCATION"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.2302389292555!2d4.416702176855269!3d51.21671773276327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6e48ed00cb3%3A0x4f21c75b1a0c8358!2sDe%20Keyserlei%2060C%2C%202018%20Antwerpen%2C%20Belgium!5e0!3m2!1sen!2sbe!4v1730588800000!5m2!1sen!2sbe"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -51,17 +51,17 @@ export function ContactMap() {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Full Address</h4>
                     <p className="text-muted-foreground text-sm">
-                      AV GLOBAL FZC
+                      ATLAS GREENTRADE
                       <br />
-                      C1-1207, Ajman Free Zone
+                      De Keyserlei 60C box 1301
                       <br />
-                      PO Box 7722
+                      2018 Antwer
                       <br />
-                      Ajman, United Arab Emirates
+                      BELGIUM
                     </p>
                   </div>
 
-                  <div>
+                  {/* <div>
                     <h4 className="font-semibold text-foreground mb-2">Nearby Landmarks</h4>
                     <ul className="text-muted-foreground text-sm space-y-1">
                       <li>• Ajman Free Zone Authority</li>
@@ -77,7 +77,7 @@ export function ContactMap() {
                       <li>• 10 min from Sharjah</li>
                       <li>• Taxi & Bus accessible</li>
                     </ul>
-                  </div>
+                  </div> */}
 
                   
               

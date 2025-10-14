@@ -18,7 +18,7 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
     <img
-      src="/mainhome.jpg"
+      src="/homepagebg.png"
       alt="ATLAS GREEN TRADE Facility"
       className="w-full h-full object-center object-cover brightness-75"
     />

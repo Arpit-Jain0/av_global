@@ -24,15 +24,15 @@ const regions = [
     color: "bg-green-500",
   },
   {
-    name: "Americas",
+    name: "North America",
     description: "Growing operations across North and South American markets",
-    countries: ["USA", "Canada", "Mexico", "Brazil", "Argentina", "Chile"],
+    countries: ["United States", "Canada", "Mexico"],
     color: "bg-purple-500",
   },
   {
-    name: "Africa",
-    description: "Emerging partnerships across the African continent",
-    countries: ["South Africa", "Egypt", "Nigeria", "Kenya", "Morocco", "Ghana"],
+    name: "South America",
+    description: "Key partnerships and market growth in the South American region",
+    countries: ["Brazil", "Argentina", "Colombia", "Chile", "Peru", "Ecuador"],
     color: "bg-orange-500",
   },
   {
@@ -72,8 +72,7 @@ export function GlobalPresence() {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">Global Presence</h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto text-pretty">
-            The whole world can be viewed as a compact collection of destinations. We offer trade services across
-            multiple countries around the world.
+          Our strength lies in the relationships we build. We source from a trusted and strategically diversified network of suppliers across key industrial regions, ensuring consistent quality, regulatory compliance, and supply chain resilience.
           </p>
         </div>
 

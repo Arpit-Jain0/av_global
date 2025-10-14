@@ -5,10 +5,13 @@ import Image from "next/image"
 import clsx from "clsx"
 
 const images = [
-  "/metals.jpg",
-  "/paper.jpg",
-  "/metals.jpg",
-  "/paper.jpg"
+  "/fnf1.png",
+  "/fnf4.png",
+ "/metal_products2.png",
+ "/metal_products3.png",
+ "/fnf6.png",
+ "/pc1.png",
+ "/plastic_products1.png"
 ]
 
 export function ImageCarousel() {

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Globe, Award, Users, Handshake } from "lucide-react"
+import { Globe, Award, Users, Handshake, Recycle, Truck, FileText, Lightbulb,  } from "lucide-react"
 
 const stats = [
   {
@@ -55,40 +55,71 @@ export function CompanyOverview() {
   return (
     <section ref={sectionRef} className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
+      <div
+          className={`text-center mb-16 transition-all duration-1000 ${
+            isVisible ? "animate-fade-in-up" : "opacity-0"
+          }`}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">Who Are We?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+            Our Commitment to Sustainability
+          </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto text-pretty">
-            We, AV International FZC, part of the AV Group, present ourselves as one of the leading trading companies in
-            the UAE, with operations spanning the Middle East, Europe, the USA, Africa, the Far East, and Southeast
-            Asia.
+            At <span className="font-semibold text-primary">Atlas GreenTrade</span>, sustainability is not a checkbox—it’s our foundation.
+            As a next-generation scrap and chemical trading company, we are redefining how industrial waste is valued,
+            moved, and repurposed across global markets.
           </p>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {stats.map((stat, index) => {
-            const Icon = stat.icon
-            return (
-              <Card
-                key={stat.label}
-                className={`text-center hover-lift transition-all duration-1000 ${isVisible ? "animate-scale-in" : "opacity-0"}`}
-                style={{ animationDelay: `${index * 200}ms` }}
+        <div className={`max-w-5xl mx-auto mb-20 transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
+            ♻️ Principles That Drive Us
+          </h3>
+
+          <div className="space-y-10">
+            {[
+              {
+                icon: Recycle,
+                title: "Circular Economy Leadership",
+                desc: "We champion the reintegration of scrap into manufacturing cycles, reducing landfill dependency and conserving raw materials.",
+              },
+              {
+                icon: Globe,
+                title: "Ethical Sourcing",
+                desc: "Every shipment is vetted for origin, compliance, and environmental impact. We work only with transparent and traceable partners.",
+              },
+              {
+                icon: Truck,
+                title: "Carbon-Conscious Logistics",
+                desc: "We optimize routes, containers, and digital workflows to reduce emissions and minimize operational waste.",
+              },
+              {
+                icon: FileText,
+                title: "Regulatory Excellence",
+                desc: "We comply with the Basel Convention, ISPM-15, and regional waste laws to ensure global compliance and accountability.",
+              },
+              {
+                icon: Lightbulb,
+                title: "Innovation in Waste Valorization",
+                desc: "We invest in technologies that transform scrap into high-value industrial inputs—turning waste into opportunity.",
+              },
+            ].map(({ icon: Icon, title, desc }, i) => (
+              <div
+                key={title}
+                className={`flex items-start gap-6 transition-all duration-1000 ${
+                  isVisible ? "animate-slide-in-up" : "opacity-0"
+                }`}
+                style={{ animationDelay: `${i * 150}ms` }}
               >
-                <CardContent className="p-8">
-                  <div className="flex justify-center mb-4">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Icon className="h-8 w-8 text-primary" />
-                    </div>
-                  </div>
-                  <div className="text-3xl font-bold text-primary mb-2">{stat.number}</div>
-                  <div className="text-lg font-semibold text-foreground mb-2">{stat.label}</div>
-                  <p className="text-sm text-muted-foreground text-pretty">{stat.description}</p>
-                </CardContent>
-              </Card>
-            )
-          })}
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-foreground mb-1">{title}</h4>
+                  <p className="text-muted-foreground text-sm text-pretty">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Company Description */}
@@ -97,7 +128,7 @@ export function CompanyOverview() {
             className={`transition-all duration-1000 delay-800 ${isVisible ? "animate-slide-in-left" : "opacity-0"}`}
           >
             <img
-              src="/av-global-team-office-meeting.jpg"
+              src="/image.png"
               alt="AV Global FZC Team"
               className="rounded-lg shadow-2xl w-full h-auto"
             />
@@ -108,42 +139,44 @@ export function CompanyOverview() {
           >
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Our Strategy & Infrastructure</h3>
             <p className="text-lg text-muted-foreground mb-6 text-pretty">
-              Our strategy at AV is to enhance the value chain between producers and end-users. We have established a
-              systematic infrastructure comprising multiple strategically chosen warehouses, logistics partners,
-              shipping lines, and relationships with various suppliers across Europe, the Middle East, Far East, South
-              America, and Canada.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8 text-pretty">
-              We are a small staff team of highly skilled professionals based on product experience of more than one
-              decade. Our vibrant company places a high value on business ethics and has carved out a niche for itself
-              by providing all of its clients around the world with the best services available.
+            We believe that operational excellence begins with strategic clarity and robust infrastructure. 
+            Our approach is built on precision, agility, and long-term value creation.
             </p>
 
             <div className="space-y-4">
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Complete Recycling Principle</h4>
+                  <h4 className="font-semibold text-foreground mb-1">Market Diversification</h4>
                   <p className="text-muted-foreground text-sm">
-                    We send scraps to recyclers and purchase their reprocessed output as raw material for new products
+                  We serve both niche and mainstream sectors, balancing high-spec chemical streams with bulk scrap flows to ensure resilience and reach.
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Global Network</h4>
+                  <h4 className="font-semibold text-foreground mb-1">Client-Centric Partnerships</h4>
                   <p className="text-muted-foreground text-sm">
-                    Strategic partnerships across multiple continents for comprehensive supply chain coverage
+                  We tailor solutions to each client’s operational and regulatory needs, offering flexible terms, transparent communication, and technical support
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Value Addition</h4>
+                  <h4 className="font-semibold text-foreground mb-1">Quality-First Trading</h4>
                   <p className="text-muted-foreground text-sm">
-                    Focus on creating added value in connections between producers and end-users
+                  Every transaction is backed by rigorous documentation, technical validation, and compliance audits—ensuring trust across borders.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-1">Digital Integration</h4>
+                  <p className="text-muted-foreground text-sm">
+                  Our workflows are powered by smart platforms for container tracking, document comparison, and real-time logistics visibility.
                   </p>
                 </div>
               </div>

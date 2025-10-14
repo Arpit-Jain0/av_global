@@ -15,40 +15,41 @@ type ProductTile = {
 const tiles: ProductTile[] = [
   {
     key: "metals",
-    title: "Metals & Alloys",
-    subtitle: "Ferrous & Non‑Ferrous | Scrap & Secondary",
-    href: "/products?category=metals", // changed
-    image: "/metals_products.jpg",
+    title: "Metals",
+    subtitle: "Premium scrap metals for recycling and industrial applications",
+    href: "/products?category=metals",
+    image: "/metal.png",
+  },
+  {
+    key: "ferrous-nonferrous",
+    title: "Ferrous & Non-Ferrous",
+    subtitle: "Steel, Copper, Aluminum, and other high-grade metal scrap",
+    href: "/products?category=fnf",
+    image: "/ferrous_nonferrous.png",
   },
   {
     key: "plastics",
-    title: "Plastics & PET",
-    subtitle: "R‑PET, Flakes, Regrinds, Near‑Prime",
-    href: "/products?category=plastics", // changed
-    image: "/plastics.jpg",
+    title: "Plastics",
+    subtitle: "R-PET, HDPE, LDPE, PP, and engineered plastic recyclables",
+    href: "/products?category=plastics",
+    image: "/plastic.png",
+  },
+  {
+    key: "secondary",
+    title: "Secondary Materials",
+    subtitle: "Reprocessed and reusable materials for sustainable manufacturing",
+    href: "/products?category=secondary",
+    image: "/secondary.png",
   },
   {
     key: "paper",
-    title: "Paper & Pulp",
-    subtitle: "Kraft, OCC, Stock Lots",
-    href: "/products?category=paper", // changed
-    image: "/paper.jpg",
-  },
-  {
-    key: "rubber",
-    title: "Rubber Recycling",
-    subtitle: "Butyl Tubes, Crumb Rubber",
-    href: "/products?category=rubber", // changed
-    image: "/rubber.jpg",
-  },
-  {
-    key: "chem",
-    title: "Chemicals & Fertilizers",
-    subtitle: "Crude/Tech Glycerin, Organic Pellets",
-    href: "/products?category=chemicals", // changed
-    image: "/chemical.jpg",
+    title: "Paper",
+    subtitle: "OCC, Kraft, Mixed Paper, and other recovered paper grades",
+    href: "/products?category=paper",
+    image: "/paper.png",
   },
 ]
+
 
 export function ProductsSection() {
   const [isVisible, setIsVisible] = useState(false)

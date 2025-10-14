@@ -87,7 +87,7 @@ export function Header() {
                 isScrolled ? "text-gray-800 hover:text-green-700" : "text-white hover:text-green-300"
               }`}
             >
-              About
+              About Us
             </Link>
             <Link
               href="/products"

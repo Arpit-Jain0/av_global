@@ -11,7 +11,6 @@ export default function ProductsPage() {
       <Header />
       <ProductsHero />
       <ProductCategories />
-      <ProductShowcase />
       <QualityAssurance />
       <Footer />
     </main>

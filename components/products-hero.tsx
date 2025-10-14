@@ -17,7 +17,7 @@ export function ProductsHero() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: "url('/products bg image.webp')" }}
+        style={{ backgroundImage: "url('/productshome.png')" }}
       />
 
       {/* Optional Dark Overlay + Blur */}

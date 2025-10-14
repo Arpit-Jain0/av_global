@@ -143,8 +143,7 @@ export function ContactForm() {
                     <SelectItem value="metals">Metals & Alloys</SelectItem>
                     <SelectItem value="paper">Paper & Cardboard</SelectItem>
                     <SelectItem value="rubber">Rubber Materials</SelectItem>
-                    <SelectItem value="oleo">Oleo Chemicals</SelectItem>
-                    <SelectItem value="fertilizers">Organic Fertilizers</SelectItem>
+               
                     <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>
@@ -185,7 +184,7 @@ export function ContactForm() {
           </CardContent>
         </Card>
 
-        <Card className="hover-lift">
+        {/* <Card className="hover-lift">
             <CardContent className="p-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
@@ -209,7 +208,7 @@ export function ContactForm() {
                 </p>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
       </div>
       </div>
 
