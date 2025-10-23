@@ -14,13 +14,6 @@ type ProductTile = {
 
 const tiles: ProductTile[] = [
   {
-    key: "metals",
-    title: "Metals",
-    subtitle: "Premium scrap metals for recycling and industrial applications",
-    href: "/products?category=metals",
-    image: "/metal.png",
-  },
-  {
     key: "ferrous-nonferrous",
     title: "Ferrous & Non-Ferrous",
     subtitle: "Steel, Copper, Aluminum, and other high-grade metal scrap",
@@ -47,6 +40,13 @@ const tiles: ProductTile[] = [
     subtitle: "OCC, Kraft, Mixed Paper, and other recovered paper grades",
     href: "/products?category=paper",
     image: "/paper.png",
+  },
+  {
+    key: "others",
+    title: "Others",
+    subtitle: "New Solutions Coming Soon.",
+    href: "/products?category=others",
+    image: "/wip.png",
   },
 ]
 

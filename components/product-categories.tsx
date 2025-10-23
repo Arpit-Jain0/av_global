@@ -7,20 +7,6 @@ import { X, Package, Factory, Recycle, Leaf, Droplets, Zap } from "lucide-react"
 
 // Product data
 const productCategories = [
-  
-  {
-    icon: Factory,
-    title: "Metals",
-    description: "Premium scrap metals for recycling and industrial applications",
-    color: "bg-gray-500",
-    products: [
-      { name: "Steel Scrap", image: "/metal_products1.png" },
-      { name: "Copper Wire", image: "/metal_products2.png" },
-      { name: "Aluminum Extrusion", image: "/metal_products3.png" },
-      { name: "Brass Scrap", image: "/metal_products4.png" },
-      { name: "Brass Scrap", image: "/metal_products5.png" },
-    ],
-  },
   {
     icon: Recycle,
     title: "Paper & Cardboard",
@@ -41,7 +27,7 @@ const productCategories = [
     products: [
       { name: "Butyl Tubes", image: "/ferrousnonferrous1.png" },
       { name: "Crumb Rubber", image: "/ferrous_nonferrous.png" },
-      { name: "Butyl Tubes", image: "/fnf1.png" },
+      { name: "Butyl Tubes", image: "/home2.jpg" },
       { name: "Crumb Rubber", image: "/fnf2.png" },
       { name: "Butyl Tubes", image: "/fnf3.png" },
       { name: "Crumb Rubber", image: "/fnf5.png" },
@@ -71,6 +57,16 @@ const productCategories = [
       { name: "PP Granules", image: "/plastic_products4.png" },
     ],
   },
+  {
+    icon: Factory,
+    title: "Others",
+    description: "Premium scrap metals for recycling and industrial applications",
+    color: "bg-gray-500",
+    products: [
+      { name: "Steel Scrap", image: "/wip.png" },
+     
+    ],
+  }
  
 ]
 
@@ -87,11 +83,13 @@ export function ProductCategories() {
     if (!cat) return
     const key = cat.toLowerCase().trim()
     const map: Record<string, number> = {
-      plastics: 0,
-      metals: 1,
-      paper: 2,
-      fnf: 3,
-      secondary: 4,
+      fnf: 1,
+      plastics: 2,
+      
+      paper:1,
+     
+      secondary: 3,
+      others: 4,
       
     }
     const idx = map[key]
