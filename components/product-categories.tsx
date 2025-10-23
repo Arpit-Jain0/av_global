@@ -8,18 +8,6 @@ import { X, Package, Factory, Recycle, Leaf, Droplets, Zap } from "lucide-react"
 // Product data
 const productCategories = [
   {
-    icon: Recycle,
-    title: "Paper & Cardboard",
-    description: "Recyclable paper grades and stock lots",
-    color: "bg-amber-500",
-    products: [
-      { name: "OCC Bales", image: "/pc1.png" },
-      { name: "Mixed Paper", image: "/pc2.png" },
-      { name: "Kraft Rolls", image: "/pc3.png" },
-      { name: "Tissue Stock", image: "/pc4.png" },
-    ],
-  },
-  {
     icon: Leaf,
     title: "Ferrous & Non-Ferrous",
     description: "Steel, Copper, Aluminum, and other high-grade metal scrap",
@@ -35,12 +23,25 @@ const productCategories = [
       { name: "Crumb Rubber", image: "/fnf6.png" },],
   },
   {
+    icon: Recycle,
+    title: "Paper & Cardboard",
+    description: "Recyclable paper grades and stock lots",
+    color: "bg-amber-500",
+    products: [
+      { name: "OCC Bales", image: "/pc1.png" },
+      { name: "Mixed Paper", image: "/pc2.png" },
+      { name: "Kraft Rolls", image: "/pc3.png" },
+      { name: "Tissue Stock", image: "/pc4.png" },
+    ],
+  },
+  
+  {
     icon: Droplets,
-    title: "Secondary Materials",
+    title: "Secondary Coils",
     description: "Reprocessed and reusable materials for sustainable manufacturing",
     color: "bg-purple-500",
     products: [
-      { name: "Crude Glycerin", image: "/sc1.png" },
+      { name: "Crude Glycerin", image: "/sc11.png" },
       { name: "Crude Glycerin", image: "/sc2.png" },
 
     ],
@@ -83,12 +84,12 @@ export function ProductCategories() {
     if (!cat) return
     const key = cat.toLowerCase().trim()
     const map: Record<string, number> = {
-      fnf: 1,
-      plastics: 2,
-      
+      fnf: 0,
       paper:1,
-     
-      secondary: 3,
+      secondary: 2,
+      plastics: 3,
+      
+      
       others: 4,
       
     }

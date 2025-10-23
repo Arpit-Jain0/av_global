@@ -13,7 +13,7 @@ export function Footer() {
                 <span className="text-primary-foreground font-bold text-xl">AV</span>
               </div>
               <div>
-                <div className="font-bold text-2xl">ATLAS GREEN TRADE</div>
+                <div className="font-bold text-2xl">ATLAS GREENTRADE</div>
                 <div className="text-sm text-background/70">Recycling Excellence</div>
               </div>
             </div>
@@ -24,7 +24,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span className="text-background/80">De Keyserlei 60C box 1301, 2018 Antwer, BELGIUM</span>
+                <span className="text-background/80">De Keyserlei 60C box 1301, 2018 Antwerp, BELGIUM</span>
               </div>
               <a
                 href="tel:+32491105135"
@@ -67,11 +67,11 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-6">Our Products</h3>
             <div className="space-y-3">
+             <div className="text-background/80">Ferrous and Non-Ferrous</div>
               <div className="text-background/80">Plastics & Polymers</div>
-              <div className="text-background/80">Metals</div>
               <div className="text-background/80">Paper & Cardboard</div>
               <div className="text-background/80">Rubber Materials</div>
-              <div className="text-background/80">Ferrous and Non-Ferrous</div>
+              
        
             </div>
           </div>

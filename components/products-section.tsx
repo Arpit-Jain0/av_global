@@ -29,10 +29,10 @@ const tiles: ProductTile[] = [
   },
   {
     key: "secondary",
-    title: "Secondary Materials",
+    title: "Secondary Coils",
     subtitle: "Reprocessed and reusable materials for sustainable manufacturing",
     href: "/products?category=secondary",
-    image: "/secondary.png",
+    image: "/sc2.png",
   },
   {
     key: "paper",

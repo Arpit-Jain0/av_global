@@ -3,28 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Shield, Award, CheckCircle, Leaf } from "lucide-react"
-
-const certifications = [
-  {
-    icon: Shield,
-    title: "ISO 9001",
-    description: "Quality Management Systems certification ensuring highest standards",
-    color: "bg-blue-500",
-  },
-  {
-    icon: Leaf,
-    title: "ISO 14001",
-    description: "Environmental Management certification demonstrating our commitment",
-    color: "bg-green-500",
-  },
-  {
-    icon: Award,
-    title: "ISO 45001",
-    description: "Health and Safety certification prioritizing employee and stakeholder wellbeing",
-    color: "bg-orange-500",
-  },
-]
+import { Award, CheckCircle } from "lucide-react"
 
 const qualityFeatures = [
   "Strict quality control processes",
@@ -68,32 +47,7 @@ export function QualityAssurance() {
           </p>
         </div>
 
-        {/* Certifications */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {certifications.map((cert, index) => {
-            const Icon = cert.icon
-            return (
-              <Card
-                key={cert.title}
-                className={`text-center hover-lift transition-all duration-1000 ${isVisible ? "animate-scale-in" : "opacity-0"}`}
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <CardContent className="p-8">
-                  <div className="flex justify-center mb-6">
-                    <div className={`w-20 h-20 ${cert.color} rounded-full flex items-center justify-center`}>
-                      <Icon className="h-10 w-10 text-white" />
-                    </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">{cert.title}</h3>
-                  <p className="text-muted-foreground text-pretty">{cert.description}</p>
-                  <Badge variant="secondary" className="mt-4">
-                    Certified
-                  </Badge>
-                </CardContent>
-              </Card>
-            )
-          })}
-        </div>
+    
 
         {/* Quality Features */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -116,12 +70,7 @@ export function QualityAssurance() {
               ))}
             </div>
 
-            <div className="p-4 bg-primary/5 rounded-lg border border-primary/20">
-              <p className="text-sm text-muted-foreground">
-                <strong>Quality Documentation:</strong> All certificates and quality policies are available upon
-                request. Please contact us for specific documentation requirements.
-              </p>
-            </div>
+            
           </div>
 
           <div

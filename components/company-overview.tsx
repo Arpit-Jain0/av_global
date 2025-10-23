@@ -68,6 +68,7 @@ export function CompanyOverview() {
             At <span className="font-semibold text-primary">Atlas GreenTrade</span>, sustainability is not a checkbox—it’s our foundation.
             As a next-generation scrap and chemical trading company, we are redefining how industrial waste is valued,
             moved, and repurposed across global markets.
+            Our operations are built on a deep understanding of global supply chains, regulatory compliance, and sustainable resource management. We specialize in sourcing, processing, and supplying a wide range of industrial-grade materials.
           </p>
         </div>
 
@@ -185,7 +186,7 @@ export function CompanyOverview() {
           </div>
 
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 gap-8 mt-12">
           <Card
             className={`hover-lift transition-all duration-1000 delay-600 ${
               isVisible ? "animate-scale-in" : "opacity-0"

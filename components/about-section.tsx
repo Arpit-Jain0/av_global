@@ -52,7 +52,7 @@ export function AboutSection() {
           >
             {/* <img
               src="/modern-sustainable-recycling-facility-with-workers.jpg"
-              alt="ATLAS GREEN TRADE Operations"
+              alt="ATLAS GREENTRADE Operations"
               className="rounded-lg shadow-2xl w-full h-auto max-h-96 sm:max-h-none object-cover"
             /> */}
             <ImageCarousel />

@@ -59,7 +59,7 @@ export function Header() {
                   isScrolled ? "text-gray-900" : "text-white"
                 }`}
               >
-                ATLAS GREEN TRADE
+                ATLAS GREENTRADE
               </h1>
               <p
                 className={`text-xs transition-colors ${

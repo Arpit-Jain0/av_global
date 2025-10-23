@@ -32,7 +32,7 @@ export function HeroSection() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className={`transition-all duration-1000 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 text-balance leading-tight">
-            Welcome to <span className="text-white">ATLAS GREEN TRADE</span>
+            Welcome to <span className="text-white">ATLAS GREENTRADE</span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 max-w-4xl mx-auto text-pretty px-4 sm:px-0">
             Serving with the power of recycling products. Your versatile and proactive partner for a circular economy

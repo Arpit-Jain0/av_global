@@ -44,7 +44,7 @@ export function Leadership() {
             <Globe className="h-6 w-6 text-primary mt-1" />
             <div>
               <h4 className="font-semibold text-foreground">🌍 Global Sourcing</h4>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground ">
                 Trusted suppliers across Europe, the Middle East, Far East, North & South America.
               </p>
             </div>
@@ -54,7 +54,7 @@ export function Leadership() {
             <CheckCircle className="h-6 w-6 text-primary mt-1" />
             <div>
               <h4 className="font-semibold text-foreground">✅ Verified Quality</h4>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground ">
                 Every material is graded, inspected, and documented to meet international standards.
               </p>
             </div>
@@ -64,7 +64,7 @@ export function Leadership() {
             <FileText className="h-6 w-6 text-primary mt-1" />
             <div>
               <h4 className="font-semibold text-foreground">📑 Compliance Expertise</h4>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground ">
                 We handle documentation with precision—ensuring full regulatory alignment and audit readiness.
               </p>
             </div>
@@ -74,7 +74,7 @@ export function Leadership() {
             <Truck className="h-6 w-6 text-primary mt-1" />
             <div>
               <h4 className="font-semibold text-foreground">🚢 Smart Logistics</h4>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground ">
                 Efficient logistics systems ensuring smooth, timely, and cost-effective deliveries.
               </p>
             </div>
@@ -84,7 +84,7 @@ export function Leadership() {
             <Handshake className="h-6 w-6 text-primary mt-1" />
             <div>
               <h4 className="font-semibold text-foreground">🤝 Reliable Partnerships</h4>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground ">
                 Long-term relationships built on trust, responsiveness, and shared success.
               </p>
             </div>
@@ -110,7 +110,7 @@ export function Leadership() {
               <CardContent className="p-8 text-center">
                 <Shield className="h-10 w-10 text-primary mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-foreground mb-4">🔍 Integrity & Transparency</h4>
-                <p className="text-muted-foreground text-sm text-pretty">
+                <p className="text-muted-foreground  text-pretty">
                   We operate with honesty, clarity, and traceability. From documentation to delivery, clients know
                   exactly what they’re getting—and why it matters.
                 </p>
@@ -121,7 +121,7 @@ export function Leadership() {
               <CardContent className="p-8 text-center">
                 <Settings className="h-10 w-10 text-primary mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-foreground mb-4">⚙️ Technical Excellence</h4>
-                <p className="text-muted-foreground text-sm text-pretty">
+                <p className="text-muted-foreground  text-pretty">
                   Rigorous standards in grading, compliance, and logistics—backed by precision and expertise.
                 </p>
               </CardContent>
@@ -131,7 +131,7 @@ export function Leadership() {
               <CardContent className="p-8 text-center">
                 <Leaf className="h-10 w-10 text-primary mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-foreground mb-4">🌍 Sustainability</h4>
-                <p className="text-muted-foreground text-sm text-pretty">
+                <p className="text-muted-foreground  text-pretty">
                   Responsible trade supporting circular economies and reducing environmental impact.
                 </p>
               </CardContent>
@@ -141,7 +141,7 @@ export function Leadership() {
               <CardContent className="p-8 text-center">
                 <Handshake className="h-10 w-10 text-primary mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-foreground mb-4">🤝 Partnership-Driven</h4>
-                <p className="text-muted-foreground text-sm text-pretty">
+                <p className="text-muted-foreground  text-pretty">
                   Long-term relationships built on trust, responsiveness, and shared goals.
                 </p>
               </CardContent>
@@ -151,7 +151,7 @@ export function Leadership() {
               <CardContent className="p-8 text-center">
                 <Lightbulb className="h-10 w-10 text-primary mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-foreground mb-4">📈 Innovation & Adaptability</h4>
-                <p className="text-muted-foreground text-sm text-pretty">
+                <p className="text-muted-foreground  text-pretty">
                   We stay ahead through continuous improvement and smarter digital solutions.
                 </p>
               </CardContent>
@@ -161,7 +161,7 @@ export function Leadership() {
               <CardContent className="p-8 text-center">
                 <Shield className="h-10 w-10 text-primary mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-foreground mb-4">🛡️ Compliance & Accountability</h4>
-                <p className="text-muted-foreground text-sm text-pretty">
+                <p className="text-muted-foreground  text-pretty">
                   Our operations align with international trade laws, environmental protocols, and ethical business
                   practices—always.
                 </p>
