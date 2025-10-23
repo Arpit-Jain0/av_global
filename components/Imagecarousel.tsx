@@ -5,13 +5,20 @@ import Image from "next/image"
 import clsx from "clsx"
 
 const images = [
-  "/fnf1.png",
-  "/fnf4.png",
- "/metal_products2.png",
- "/metal_products3.png",
- "/fnf6.png",
- "/pc1.png",
- "/plastic_products1.png"
+  "/home1.jpg",
+"/home2.jpg",
+"/home3.jpg",
+"/home4.jpg",
+"/home5.jpg",
+"/home6.jpg",
+"/home8.jpg",
+"/home9.jpg",
+"/home11.jpg",
+"/home12.jpg",
+"/home13.jpg",
+"/home14.jpg",
+"/home15.jpg",
+"/home16.jpg"
 ]
 
 export function ImageCarousel() {
@@ -20,7 +27,7 @@ export function ImageCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }, 2000) // 2 seconds
+    }, 2500) // 2 seconds
 
     return () => clearInterval(interval)
   }, [])

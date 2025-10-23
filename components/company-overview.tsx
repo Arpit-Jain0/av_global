@@ -129,7 +129,7 @@ export function CompanyOverview() {
           >
             <img
               src="/image.png"
-              alt="AV Global FZC Team"
+              alt="ATLAS GREENTRADE Team"
               className="rounded-lg shadow-2xl w-full h-auto"
             />
           </div>

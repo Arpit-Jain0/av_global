@@ -7,18 +7,7 @@ import { X, Package, Factory, Recycle, Leaf, Droplets, Zap } from "lucide-react"
 
 // Product data
 const productCategories = [
-  {
-    icon: Package,
-    title: "Plastics & Polymers",
-    description: "Explore our range of recycled and virgin plastics",
-    color: "bg-blue-500",
-    products: [
-      { name: "R-PET", image: "/plastic_products1.png" },
-      { name: "PET Flakes", image: "/plastic_products2.png" },
-      { name: "HDPE Regrind", image: "/plastic_products3.png" },
-      { name: "PP Granules", image: "/plastic_products4.png" },
-    ],
-  },
+  
   {
     icon: Factory,
     title: "Metals",
@@ -68,6 +57,18 @@ const productCategories = [
       { name: "Crude Glycerin", image: "/sc1.png" },
       { name: "Crude Glycerin", image: "/sc2.png" },
 
+    ],
+  },
+  {
+    icon: Package,
+    title: "Plastics & Polymers",
+    description: "Explore our range of recycled and virgin plastics",
+    color: "bg-blue-500",
+    products: [
+      { name: "R-PET", image: "/plastic_products1.png" },
+      { name: "PET Flakes", image: "/plastic_products2.png" },
+      { name: "HDPE Regrind", image: "/plastic_products3.png" },
+      { name: "PP Granules", image: "/plastic_products4.png" },
     ],
   },
  

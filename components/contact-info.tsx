@@ -18,7 +18,7 @@ const contactDetails = [
   {
     icon: Mail,
     title: "Email Address",
-    content: "atlasgreentrade@gmail.com",
+    content: "info@atlasgreen.eu",
     color: "text-blue-500",
   },
   

@@ -125,33 +125,26 @@ export function GlobalPresence() {
         </div>
 
         {/* Regional Presence */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {regions.map((region, index) => (
-            <Card
-              key={region.name}
-              className={`hover-lift transition-all duration-1000 ${isVisible ? "animate-scale-in" : "opacity-0"}`}
-              style={{ animationDelay: `${600 + index * 100}ms` }}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className={`w-4 h-4 ${region.color} rounded-full`}></div>
-                  <h3 className="text-xl font-bold text-foreground">{region.name}</h3>
-                </div>
-                <p className="text-muted-foreground mb-4 text-pretty">{region.description}</p>
-                <div className="space-y-2">
-                  <h4 className="text-sm font-semibold text-foreground">Key Markets:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {region.countries.map((country) => (
-                      <span key={country} className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded">
-                        {country}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <div className="space-y-8 text-center">
+  {regions.map((region) => (
+    <div key={region.name}>
+      <h3 className="font-bold flex items-center justify-center gap-2 mb-3">
+        <div className={`w-3 h-3 ${region.color} rounded-full`}></div>
+        <span>{region.name}</span>
+      </h3>
+      <div className="flex flex-wrap justify-center gap-2">
+        {region.countries.map((country) => (
+          <span
+            key={country}
+            className={`px-3 py-1 rounded-full text-xs border ${region.color} text-muted-foreground`}
+          >
+            {country}
+          </span>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>
 
         {/* Infrastructure */}
         <div

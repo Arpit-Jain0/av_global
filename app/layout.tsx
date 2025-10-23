@@ -8,26 +8,26 @@ import { Toaster } from "sonner"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "AV Global FZC - Global Leaders in Recyclable Raw Materials",
+  title: "ATLAS GREENTRADE - Global Leaders in Recyclable Raw Materials",
   description:
-    "AV Global FZC is a versatile and proactive partner in the trade of recyclable, prime, and non-prime raw materials. We deal in Plastics, Rubber, Paper, Metals, Oleo chemicals, and Fertilizers.",
+    "ATLAS GREENTRADE is a versatile and proactive partner in the trade of recyclable, prime, and non-prime raw materials. We deal in Plastics, Rubber, Paper, Metals, Oleo chemicals, and Fertilizers.",
   keywords:
     "recycling, raw materials, plastics, metals, paper, rubber, oleo chemicals, fertilizers, sustainability, circular economy",
-  authors: [{ name: "AV Global FZC" }],
-  creator: "AV Global FZC",
-  publisher: "AV Global FZC",
+  authors: [{ name: "ATLAS GREENTRADE" }],
+  creator: "ATLAS GREENTRADE",
+  publisher: "ATLAS GREENTRADE",
   robots: "index, follow",
   openGraph: {
-    title: "AV Global FZC - Global Leaders in Recyclable Raw Materials",
+    title: "ATLAS GREENTRADE - Global Leaders in Recyclable Raw Materials",
     description:
       "Serving with the power of recycling products. Your trusted partner for sustainable raw materials trading.",
-    siteName: "AV Global FZC",
+    siteName: "ATLAS GREENTRADE",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AV Global FZC - Global Leaders in Recyclable Raw Materials",
+    title: "ATLAS GREENTRADE - Global Leaders in Recyclable Raw Materials",
     description:
       "Serving with the power of recycling products. Your trusted partner for sustainable raw materials trading.",
   },

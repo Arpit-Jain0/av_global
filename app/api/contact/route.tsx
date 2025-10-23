@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
 
         <div style="margin-top: 20px; padding: 15px; background-color: #eff6ff; border-radius: 8px; border-left: 4px solid #2563eb;">
           <p style="margin: 0; color: #1e40af; font-size: 14px;">
-            This message was sent from the AV Global FZC website contact form.
+            This message was sent from the Atlas GreenTrade FZC website contact form.
           </p>
         </div>
       </div>

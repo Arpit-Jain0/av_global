@@ -34,11 +34,11 @@ export function Footer() {
                 <span>+32-491105135</span>
               </a>
               <a
-                href="mailto:atlasgreentrade@gmail.com"
+                href="mailto:info@atlasgreen.eu"
                 className="flex items-center gap-3 text-background/80 hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5 text-primary" />
-                <span>atlasgreentrade@gmail.com</span>
+                <span>info@atlasgreen.eu</span>
               </a>
              
             </div>
@@ -90,7 +90,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-background/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-background/60 text-sm">
-            © 2025 Atlas GreenTrade. All Rights Reserved. Registered under the laws of UAE.
+            © 2025 Atlas GreenTrade. All Rights Reserved. Registered under the laws of BELGIUM.
           </div>
         </div>
 
