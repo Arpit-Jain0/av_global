@@ -73,7 +73,7 @@ export function ProductsSection() {
             What We Make
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto text-pretty">
-            Five core categories across metals, plastics, paper, rubber, and chemicals & fertilizers.
+            Four core categories across metals, plastics, paper, and secondary coils.
           </p>
         </div>
 

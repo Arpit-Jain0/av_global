@@ -82,7 +82,7 @@ export function HeroSection() {
                   <Recycle className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                 </div>
               </div>
-              <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">20+</div>
+              <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">15+</div>
               <div className="text-sm sm:text-base text-white/80">Years Experience</div>
             </div>
             <div className="text-center">

@@ -92,7 +92,7 @@ export function QualityAssurance() {
 
                 <div className="text-center">
                   <Badge variant="outline" className="text-primary border-primary">
-                    20+ Years of Excellence
+                    15+ Years of Excellence
                   </Badge>
                 </div>
               </CardContent>

@@ -68,9 +68,9 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-6">Our Products</h3>
             <div className="space-y-3">
              <div className="text-background/80">Ferrous and Non-Ferrous</div>
-              <div className="text-background/80">Plastics & Polymers</div>
               <div className="text-background/80">Paper & Cardboard</div>
-              <div className="text-background/80">Rubber Materials</div>
+              <div className="text-background/80">Secondary Coils</div>
+              <div className="text-background/80">Plastics & Polymers</div>
               
        
             </div>

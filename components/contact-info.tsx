@@ -25,7 +25,7 @@ const contactDetails = [
 ]
 
 const businessHours = [
-  { day: "Monday - Saturday", hours: "9:00 AM to 7:00 PM" },
+  { day: "Monday - Saturday", hours: "9:00 AM to 5:00 PM" },
   { day: "Sunday", hours: "Closed" },
 ]
 
