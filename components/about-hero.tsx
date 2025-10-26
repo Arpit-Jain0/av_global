@@ -45,7 +45,6 @@ export function AboutHero() {
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto text-pretty">
           With over 15 years of specialized experience, ATLAS GREENTRADE is a trusted name in the recycling and chemical trading industry. We serve both niche and traditional markets with precision, integrity, and technical expertise.
-          
           </p>
 
           {/* Button */}

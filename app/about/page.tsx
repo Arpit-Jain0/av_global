@@ -12,7 +12,6 @@ export default function AboutPage() {
       <Header />
       <AboutHero />
       <CompanyOverview />
-
       <GlobalPresence />
       <Leadership />
       <Footer />

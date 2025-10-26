@@ -6,7 +6,7 @@ const contactDetails = [
   {
     icon: MapPin,
     title: "Head Office Address",
-    content: "De Keyserlei 60C box 1301, 2018 Antwer",
+    content: "De Keyserlei 60C box 1301, 2018 Antwerp",
     color: "text-red-500",
   },
   {
